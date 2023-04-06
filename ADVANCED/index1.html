@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <title>MAL</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <style>
+            body {
+    height: 3000px;
+    overflow-x: hidden ;
+}
+
+.bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 3px 10px white;
+}
+.wrapper{
+  width: 1200px;
+  margin: 100px auto;
+}
+.title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title h4{
+  text-transform: capitalize;
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.title h4 span{
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: -10px;
+}
+.title h4:before{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ff7720;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-menu{
+  flex-basis: 580px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+  border-bottom: 0;
+}
+.single-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.single-menu:hover img{
+  border-radius: 0;
+}
+.single-menu img{
+  max-width: 180px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 3px;
+  transition: .5s;
+}
+.single-menu h4{
+  text-transform: capitalize;
+  font-size: 22px;
+  border-bottom: 1px dashed #333;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.single-menu h4 span{
+  float: right;
+  color: #ff7720;
+  font-style: italic;
+
+}
+        </style>
+    </head>
+    <body>
+        <img class="bg-image"
+        src="images/rest.webp" alt="Bg image">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+            <div class="container-fluid">
+                <img src="images/logooo.png" class="rounded mx-auto d-block" alt="petcare" style="width: 200px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="text-center">
+          <h4 class="text-warning">CAFÉ / RESTAURANT</h4>
+          <br>
+          <h1 class="text-light">MAL</h1>
+          <br>
+          <p class="text-light">A unique café located in the heart of Prishtina. Always fresh coffee and biscuits. Open for indoor dining and to-go orders.</p>
+          <br>
+          <button type="button" class="btn btn-outline-warning ">Make Reservation</button>
+        </div>
+       <br><br><br><br><br><br><br><br><br><br><br>
+       <!-- <div class="card mb-3" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/cof.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Always amazing experience</h5>
+              <p class="card-text">Take a coffee break or enjoy a meal.</p>
+              <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <section id="about" class="about-section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="about-img">
+                <img src="images/cof.jpg" alt="coffee" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+              <div class="about-text">
+                <h2>Always amazing experience</h2><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nobis laborum sit cum sapiente porro animi at! Eius laborum soluta tempora quaerat! Saepe sequi rerum vel magnam non eaque a!</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p class="text-end">Take a coffee break or enjoy a meal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br><br><br>
+      <section id="about" class="about-section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+              <div class="about-text">
+                <h2>Beautiful outdoor seating</h2><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nobis laborum sit cum sapiente porro animi at! Eius laborum soluta tempora quaerat! Saepe sequi rerum vel magnam non eaque a!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p class="text-end">Great variety of foods you will enjoy.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="about-img">
+                <img src="images/view.jpg" alt="coffee" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br><br><br>
+      <div class="card text-bg-dark">
+        <img src="images/speciality.jpg" class="card-img" alt="enjoy">
+        <div class="card-img-overlay">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <h4 class="card-text text-warning">Enjoy our specialty coffees and award <br> winning doughnuts in a friendly atmosphere.</h4>
+        </div>
+      </div>
+      <br>
+      <div class="wrapper">
+        <div class="title">
+          <h4><span>Fresh food for good health</span>Our Menu</h4>
+        </div>
+        <div class="menu">
+          <div class="single-menu">
+            <img src="images/coffee.jpg" alt="coffee">
+            <div class="menu-content">
+              <h4>Coffee <span>From 1.00€ </span></h4>
+              <p>Americano, black coffee, cappuccino, espresso, latte, macchiato, mocha, and cold coffee variety</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/coctails.jpg" alt="coctails">
+            <div class="menu-content">
+              <h4>Special Cocktails<span>From 3.50€</span></h4>
+              <p>Gin Cocktails, Vodka Cocktails, Bourbon Cocktails, Rum Cocktails, Tequila Cocktails, Champagne&Prosecco Cocktails, Beer & Wine Cocktails, Vermouth Cocktails</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/donuts.jpg" alt="donuts">
+            <div class="menu-content">
+              <h4>Doughnuts <span>From 1.50€</span></h4>
+              <p>Yeast Doughnuts, Cake Doughnuts, Doughnut Holes, Churros, Cruller, Glazed Doughnuts, Twists, Frosted Doughnuts</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/pancake.jpg" alt="pancake">
+            <div class="menu-content">
+              <h4>Pancakes <span>From 2.00€</span></h4>
+              <p>American pancakes, American blueberry pancakes, Fluffy American pancakes with cherry-berry syrup, Scotch pancakes, Easy banana pancakes</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/burg.jpg" alt="hamburger">
+            <div class="menu-content">
+              <h4>Burgers <span>From 3.50€</span></h4>
+              <p>Beef Burgers, Elk Burgers, Portobello Mushroom Burgers, Turkey Burgers, Veggie Burgers, Bison Burgers, Black Bean Burgers</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/steak.jpg" alt="steak">
+            <div class="menu-content">
+              <h4>Steak <span>From 4.50€</span></h4>
+              <p>Filet Mignon, Porterhouse, Ribeye, New York Strip, Hanger, Flank, Tri-Tip, Prime Rib, Flat Iron, Wagyu, Top Sirloi</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/pasta.jpg" alt="pasta">
+            <div class="menu-content">
+              <h4>Pasta <span>From 3.50€</span></h4>
+              <p>Arrabiata, Napoli, Mac n'Cheese, Bolognese, Carbonara, Sweety, Beef&Mushrooms, Alfredo, Lasagna Sauce</p>
+            </div>
+          </div>
+          <div class="single-menu">
+            <img src="images/croi.webp" alt="croissants">
+            <div class="menu-content">
+              <h4>Croissants <span>From 1.50€</span></h4>
+              <p>Argentinian Croissants, Austrian Croissants, Romanian Croissants, French Croissants, Polish Croissants, Portuguese Croissants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-center">
+        <h3>Online table reservation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo<br> praesentium sequi in cum, beatae maiores quae qui.</p>
+      </div><br>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+        </div>
+        <div class="col">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Persons</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="1">Four</option>
+            <option value="1">Five</option>
+            <option value="1">Six</option>
+            <option value="1">Seven</option>
+            <option value="1">Eight</option>
+            <option value="1">Birthday party</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Phone number" aria-label="Phone number">
+        </div>
+        <div class="col">
+          <input type="date" class="form-control" placeholder="Date" aria-label="Date">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
+        </div>
+        <div class="col">
+          <input type="time" class="form-control" placeholder="Time" aria-label="Time">
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+      <button type="button" class="btn btn-outline-warning  text-center ">RESERVE A TABLE</button>
+      <br><br><br>
+      <p>OR CALL US</p>
+      <h3>+38344000000</h3>
+    </div>
+    <br>
+    <div class="card text-bg-dark">
+      <img src="images/loca.jpg" class="card-img" alt="location">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+    <br><br>
+    <div class=" my-5">
+
+      <footer style="background-color: black">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h5 class="mb-3 text-warning" style="letter-spacing: 2px;">ABOUT US</h5>
+            <p style="color: #8e8d8d"> 
+              Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Corrupti dolorum, sint corporis <br> nostrum, possimus unde eos vitae eius quasi<br> saepe.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-3 text-warning" style="letter-spacing: 2px; ">CONTACT INFO</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                <a href="#!" style="color: #8e8d8d">Prishtine 10000, Kosove </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" style="color: #8e8d8d;">+38344000000</a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" style="color: #8e8d8d">mal@coffeeshop.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-1 text-warning" style="letter-spacing: 2px;"> OPENING HOURS </h5>
+            <table class="table" style="color: #8e8d8d  border-color#8e8d8d">
+              <tbody style="color: #8e8d8d;">
+                <tr>
+                  <td>Sun - Thurs:</td>
+                  <td>8am - 11pm</td>
+                </tr>
+                <tr>
+                  <td>Sat - Sat:</td>
+                  <td>8am - 1am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 text-warning">
+        © 2023 MAL. All rights reserved.
+      </div>
+    </footer>
+  </div>
+<!-- <script>
+    const navEl = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56) {
+            navEl.classlist.add('navbar-scrolled');
+        } else if (window.scrollY < 56) {
+            navEl.classList.remove('navbar-scrolled');
+        }
+    });
+</script> -->
+    </body>
+
+</html>
